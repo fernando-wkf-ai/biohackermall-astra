@@ -1,0 +1,60 @@
+{
+  "id": "samsung",
+  "category": "smartring",
+  "brand": "Samsung",
+  "model": "Galaxy Ring",
+  "currency": "USD",
+  "hardware_price": {
+    "value": 399.99,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "monthly_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "annual_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "free_months": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "iphone": {
+    "value": false,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "android": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "battery_min": {
+    "value": null,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "battery_max": {
+    "value": 7,
+    "verified_date": null,
+    "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+  },
+  "battery_mode": "standard",
+  "battery_alternative": null,
+  "official_url": "https://www.samsung.com/us/rings/galaxy-ring/",
+  "affiliate_url": null,
+  "affiliate_status": "not_prioritized",
+  "affiliate_network": null,
+  "verified_date": null,
+  "data_status": "starting_dataset",
+  "availability_status": "check_official",
+  "notes": {
+    "en": "Pricing and availability may vary. Some features require a Samsung Galaxy phone.",
+    "zh-HK": "價格及供應情況可能有所不同。部分功能需要 Samsung Galaxy 手機。"
+  }
+}

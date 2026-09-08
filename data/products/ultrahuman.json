@@ -1,0 +1,60 @@
+{
+  "id": "ultrahuman",
+  "category": "smartring",
+  "brand": "Ultrahuman",
+  "model": "Ring PRO",
+  "currency": "USD",
+  "hardware_price": {
+    "value": 479,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "monthly_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "annual_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "free_months": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "iphone": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "android": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "battery_min": {
+    "value": null,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "battery_max": {
+    "value": 15,
+    "verified_date": null,
+    "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+  },
+  "battery_mode": "standard",
+  "battery_alternative": null,
+  "official_url": "https://www.ultrahuman.com/us/ring-pro/buy/",
+  "affiliate_url": null,
+  "affiliate_status": "approved",
+  "affiliate_network": "Awin",
+  "verified_date": null,
+  "data_status": "starting_dataset",
+  "availability_status": "check_official",
+  "notes": {
+    "en": "Check the official site for current availability and shipping.",
+    "zh-HK": "最新供應及出貨情況請查看官方網站。"
+  }
+}
