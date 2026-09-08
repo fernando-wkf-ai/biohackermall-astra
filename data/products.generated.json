@@ -1,0 +1,255 @@
+[
+  {
+    "id": "oura",
+    "category": "smartring",
+    "brand": "Oura",
+    "model": "Ring 5",
+    "currency": "USD",
+    "hardware_price": {
+      "value": 399,
+      "verified_date": null,
+      "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+    },
+    "monthly_subscription": {
+      "value": 5.99,
+      "verified_date": "2026-09-08",
+      "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+    },
+    "annual_subscription": {
+      "value": 69.99,
+      "verified_date": "2026-09-08",
+      "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+    },
+    "free_months": {
+      "value": 1,
+      "verified_date": "2026-09-08",
+      "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+    },
+    "iphone": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+    },
+    "android": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+    },
+    "battery_min": {
+      "value": 6,
+      "verified_date": null,
+      "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+    },
+    "battery_max": {
+      "value": 9,
+      "verified_date": null,
+      "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+    },
+    "battery_mode": "standard",
+    "battery_alternative": null,
+    "official_url": "https://ouraring.com/store/rings/oura-ring-5",
+    "affiliate_url": null,
+    "affiliate_status": "pending",
+    "affiliate_network": null,
+    "verified_date": null,
+    "data_status": "starting_dataset",
+    "availability_status": "check_official",
+    "notes": {
+      "en": "Membership is required for the full feature set; limited functions remain without it.",
+      "zh-HK": "完整功能需要會員訂閱；沒有訂閱時仍可使用部分基本功能。"
+    }
+  },
+  {
+    "id": "ringconn",
+    "category": "smartring",
+    "brand": "RingConn",
+    "model": "Gen 3",
+    "currency": "USD",
+    "hardware_price": {
+      "value": 349,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "monthly_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "annual_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "free_months": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "iphone": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "android": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "battery_min": {
+      "value": 10,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "battery_max": {
+      "value": 12,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "battery_mode": "vibration_on",
+    "battery_alternative": {
+      "mode": "vibration_off",
+      "minimum": {
+        "value": 11,
+        "verified_date": null,
+        "source_url": "https://ringconn.com/products/ringconn-gen-3"
+      },
+      "maximum": {
+        "value": 14,
+        "verified_date": null,
+        "source_url": "https://ringconn.com/products/ringconn-gen-3"
+      }
+    },
+    "official_url": "https://ringconn.com/products/ringconn-gen-3",
+    "affiliate_url": null,
+    "affiliate_status": "verifying",
+    "affiliate_network": null,
+    "verified_date": null,
+    "data_status": "starting_dataset",
+    "availability_status": "check_official",
+    "notes": {
+      "en": "Battery estimates depend on vibration settings.",
+      "zh-HK": "電池續航估算會因震動設定而有所不同。"
+    }
+  },
+  {
+    "id": "samsung",
+    "category": "smartring",
+    "brand": "Samsung",
+    "model": "Galaxy Ring",
+    "currency": "USD",
+    "hardware_price": {
+      "value": 399.99,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "monthly_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "annual_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "free_months": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "iphone": {
+      "value": false,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "android": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "battery_min": {
+      "value": null,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "battery_max": {
+      "value": 7,
+      "verified_date": null,
+      "source_url": "https://www.samsung.com/us/rings/galaxy-ring/"
+    },
+    "battery_mode": "standard",
+    "battery_alternative": null,
+    "official_url": "https://www.samsung.com/us/rings/galaxy-ring/",
+    "affiliate_url": null,
+    "affiliate_status": "not_prioritized",
+    "affiliate_network": null,
+    "verified_date": null,
+    "data_status": "starting_dataset",
+    "availability_status": "check_official",
+    "notes": {
+      "en": "Pricing and availability may vary. Some features require a Samsung Galaxy phone.",
+      "zh-HK": "價格及供應情況可能有所不同。部分功能需要 Samsung Galaxy 手機。"
+    }
+  },
+  {
+    "id": "ultrahuman",
+    "category": "smartring",
+    "brand": "Ultrahuman",
+    "model": "Ring PRO",
+    "currency": "USD",
+    "hardware_price": {
+      "value": 479,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "monthly_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "annual_subscription": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "free_months": {
+      "value": 0,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "iphone": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "android": {
+      "value": true,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "battery_min": {
+      "value": null,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "battery_max": {
+      "value": 15,
+      "verified_date": null,
+      "source_url": "https://www.ultrahuman.com/us/ring-pro/buy/"
+    },
+    "battery_mode": "standard",
+    "battery_alternative": null,
+    "official_url": "https://www.ultrahuman.com/us/ring-pro/buy/",
+    "affiliate_url": null,
+    "affiliate_status": "approved",
+    "affiliate_network": "Awin",
+    "verified_date": null,
+    "data_status": "starting_dataset",
+    "availability_status": "check_official",
+    "notes": {
+      "en": "Check the official site for current availability and shipping.",
+      "zh-HK": "最新供應及出貨情況請查看官方網站。"
+    }
+  }
+]
+

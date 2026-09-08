@@ -1,0 +1,61 @@
+{
+  "id": "oura",
+  "category": "smartring",
+  "brand": "Oura",
+  "model": "Ring 5",
+  "currency": "USD",
+  "hardware_price": {
+    "value": 399,
+    "verified_date": null,
+    "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+  },
+  "monthly_subscription": {
+    "value": 5.99,
+    "verified_date": "2026-09-08",
+    "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+  },
+  "annual_subscription": {
+    "value": 69.99,
+    "verified_date": "2026-09-08",
+    "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+  },
+  "free_months": {
+    "value": 1,
+    "verified_date": "2026-09-08",
+    "source_url": "https://support.ouraring.com/hc/en-us/articles/4409086524819-Oura-Membership"
+  },
+  "iphone": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+  },
+  "android": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+  },
+  "battery_min": {
+    "value": 6,
+    "verified_date": null,
+    "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+  },
+  "battery_max": {
+    "value": 9,
+    "verified_date": null,
+    "source_url": "https://ouraring.com/store/rings/oura-ring-5"
+  },
+  "battery_mode": "standard",
+  "battery_alternative": null,
+  "official_url": "https://ouraring.com/store/rings/oura-ring-5",
+  "affiliate_url": null,
+  "affiliate_status": "pending",
+  "affiliate_network": null,
+  "verified_date": null,
+  "data_status": "starting_dataset",
+  "availability_status": "check_official",
+  "notes": {
+    "en": "Membership is required for the full feature set; limited functions remain without it.",
+    "zh-HK": "完整功能需要會員訂閱；沒有訂閱時仍可使用部分基本功能。"
+  }
+}
+

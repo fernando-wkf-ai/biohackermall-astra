@@ -1,0 +1,73 @@
+{
+  "id": "ringconn",
+  "category": "smartring",
+  "brand": "RingConn",
+  "model": "Gen 3",
+  "currency": "USD",
+  "hardware_price": {
+    "value": 349,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "monthly_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "annual_subscription": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "free_months": {
+    "value": 0,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "iphone": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "android": {
+    "value": true,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "battery_min": {
+    "value": 10,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "battery_max": {
+    "value": 12,
+    "verified_date": null,
+    "source_url": "https://ringconn.com/products/ringconn-gen-3"
+  },
+  "battery_mode": "vibration_on",
+  "battery_alternative": {
+    "mode": "vibration_off",
+    "minimum": {
+      "value": 11,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    },
+    "maximum": {
+      "value": 14,
+      "verified_date": null,
+      "source_url": "https://ringconn.com/products/ringconn-gen-3"
+    }
+  },
+  "official_url": "https://ringconn.com/products/ringconn-gen-3",
+  "affiliate_url": null,
+  "affiliate_status": "verifying",
+  "affiliate_network": null,
+  "verified_date": null,
+  "data_status": "starting_dataset",
+  "availability_status": "check_official",
+  "notes": {
+    "en": "Battery estimates depend on vibration settings.",
+    "zh-HK": "電池續航估算會因震動設定而有所不同。"
+  }
+}
+

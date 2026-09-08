@@ -1,0 +1,704 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "",
+    "branch": "main",
+    "base_url": "",
+    "auth_endpoint": "auth"
+  },
+  "publish_mode": "editorial_workflow",
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "site_url": "https://biohackermall.com",
+  "collections": [
+    {
+      "name": "articles_en",
+      "label": "English articles",
+      "folder": "content/en",
+      "create": true,
+      "format": "frontmatter",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "summary": "{{title}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "slug",
+          "label": "URL slug",
+          "widget": "string"
+        },
+        {
+          "name": "translation_key",
+          "label": "Translation pair ID",
+          "widget": "string"
+        },
+        {
+          "name": "excerpt",
+          "label": "Short introduction",
+          "widget": "text"
+        },
+        {
+          "name": "category",
+          "label": "Product category",
+          "widget": "string"
+        },
+        {
+          "name": "type",
+          "label": "Content type",
+          "widget": "select",
+          "options": [
+            "article",
+            "comparison",
+            "buying-guide",
+            "explainer",
+            "product-update",
+            "decision-guide",
+            "news"
+          ]
+        },
+        {
+          "name": "tags",
+          "widget": "list"
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "widget": "string"
+        },
+        {
+          "name": "published_date",
+          "label": "published date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": true
+        },
+        {
+          "name": "updated_date",
+          "label": "updated date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": true
+        },
+        {
+          "name": "last_verified_date",
+          "label": "last verified date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": false
+        },
+        {
+          "name": "locale",
+          "widget": "hidden",
+          "default": "en"
+        },
+        {
+          "name": "seo_title",
+          "label": "Search engine title",
+          "widget": "string"
+        },
+        {
+          "name": "meta_description",
+          "label": "Search engine description",
+          "widget": "text"
+        },
+        {
+          "name": "sources",
+          "label": "Official sources",
+          "widget": "list",
+          "fields": [
+            {
+              "name": "label",
+              "label": "Source name",
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Official HTTPS URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "affiliate_disclosure",
+          "label": "Show affiliate disclosure",
+          "widget": "boolean",
+          "default": true
+        },
+        {
+          "name": "schema_type",
+          "widget": "hidden",
+          "default": "Article"
+        },
+        {
+          "name": "published",
+          "label": "Published on site",
+          "widget": "boolean",
+          "default": false
+        },
+        {
+          "name": "body",
+          "label": "Article",
+          "widget": "markdown"
+        }
+      ]
+    },
+    {
+      "name": "articles_zh-hk",
+      "label": "繁體中文文章",
+      "folder": "content/zh-hk",
+      "create": true,
+      "format": "frontmatter",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "summary": "{{title}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "slug",
+          "label": "URL slug",
+          "widget": "string"
+        },
+        {
+          "name": "translation_key",
+          "label": "Translation pair ID",
+          "widget": "string"
+        },
+        {
+          "name": "excerpt",
+          "label": "Short introduction",
+          "widget": "text"
+        },
+        {
+          "name": "category",
+          "label": "Product category",
+          "widget": "string"
+        },
+        {
+          "name": "type",
+          "label": "Content type",
+          "widget": "select",
+          "options": [
+            "article",
+            "comparison",
+            "buying-guide",
+            "explainer",
+            "product-update",
+            "decision-guide",
+            "news"
+          ]
+        },
+        {
+          "name": "tags",
+          "widget": "list"
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "widget": "string"
+        },
+        {
+          "name": "published_date",
+          "label": "published date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": true
+        },
+        {
+          "name": "updated_date",
+          "label": "updated date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": true
+        },
+        {
+          "name": "last_verified_date",
+          "label": "last verified date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": false
+        },
+        {
+          "name": "locale",
+          "widget": "hidden",
+          "default": "zh-HK"
+        },
+        {
+          "name": "seo_title",
+          "label": "Search engine title",
+          "widget": "string"
+        },
+        {
+          "name": "meta_description",
+          "label": "Search engine description",
+          "widget": "text"
+        },
+        {
+          "name": "sources",
+          "label": "Official sources",
+          "widget": "list",
+          "fields": [
+            {
+              "name": "label",
+              "label": "Source name",
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Official HTTPS URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "affiliate_disclosure",
+          "label": "Show affiliate disclosure",
+          "widget": "boolean",
+          "default": true
+        },
+        {
+          "name": "schema_type",
+          "widget": "hidden",
+          "default": "Article"
+        },
+        {
+          "name": "published",
+          "label": "Published on site",
+          "widget": "boolean",
+          "default": false
+        },
+        {
+          "name": "body",
+          "label": "Article",
+          "widget": "markdown"
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "label": "Shared product data / 共用產品資料",
+      "folder": "data/products",
+      "create": true,
+      "format": "json",
+      "extension": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{brand}} {{model}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "id",
+          "widget": "string"
+        },
+        {
+          "name": "category",
+          "label": "category",
+          "widget": "string"
+        },
+        {
+          "name": "brand",
+          "label": "brand",
+          "widget": "string"
+        },
+        {
+          "name": "model",
+          "label": "model",
+          "widget": "string"
+        },
+        {
+          "name": "currency",
+          "label": "currency",
+          "widget": "string"
+        },
+        {
+          "name": "hardware_price",
+          "label": "hardware price",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": true,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "monthly_subscription",
+          "label": "monthly subscription",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": true,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "annual_subscription",
+          "label": "annual subscription",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": true,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "free_months",
+          "label": "free months",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": true,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "iphone",
+          "label": "iphone",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "boolean",
+              "required": true
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "android",
+          "label": "android",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "boolean",
+              "required": true
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "battery_min",
+          "label": "battery min",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": false,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "battery_max",
+          "label": "battery max",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "value",
+              "label": "Value",
+              "widget": "number",
+              "required": true,
+              "value_type": "float",
+              "min": 0
+            },
+            {
+              "name": "verified_date",
+              "label": "verified date",
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false,
+              "required": false
+            },
+            {
+              "name": "source_url",
+              "label": "Official source URL",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "battery_mode",
+          "label": "battery_mode",
+          "widget": "string"
+        },
+        {
+          "name": "battery_alternative",
+          "label": "Alternative battery mode",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "mode",
+              "label": "mode",
+              "widget": "string"
+            },
+            {
+              "name": "minimum",
+              "label": "minimum",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "widget": "number",
+                  "required": true,
+                  "value_type": "float",
+                  "min": 0
+                },
+                {
+                  "name": "verified_date",
+                  "label": "verified date",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "source_url",
+                  "label": "Official source URL",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "maximum",
+              "label": "maximum",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "widget": "number",
+                  "required": true,
+                  "value_type": "float",
+                  "min": 0
+                },
+                {
+                  "name": "verified_date",
+                  "label": "verified date",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "source_url",
+                  "label": "Official source URL",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "official_url",
+          "label": "Official product URL",
+          "widget": "string"
+        },
+        {
+          "name": "affiliate_url",
+          "label": "Affiliate URL (optional)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "affiliate_status",
+          "widget": "select",
+          "options": [
+            "pending",
+            "verifying",
+            "approved",
+            "not_prioritized"
+          ]
+        },
+        {
+          "name": "affiliate_network",
+          "label": "affiliate_network",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "verified_date",
+          "label": "verified date",
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false,
+          "required": false
+        },
+        {
+          "name": "data_status",
+          "widget": "select",
+          "options": [
+            "starting_dataset",
+            "verified"
+          ]
+        },
+        {
+          "name": "availability_status",
+          "label": "availability_status",
+          "widget": "string"
+        },
+        {
+          "name": "notes",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "en",
+              "label": "English note",
+              "widget": "text"
+            },
+            {
+              "name": "zh-HK",
+              "label": "Traditional Chinese note",
+              "widget": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
