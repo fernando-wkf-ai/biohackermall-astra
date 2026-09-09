@@ -19,6 +19,19 @@ The build generates data/products.generated.json and data/content.generated.json
 
 ## AI publishing workflow
 
+### Local Windows tooling
+
+If the Codex-bundled `pnpm exec` reports that `tsc` or `vinext` is not found despite an installed `node_modules` folder, add the project's local tools to the current PowerShell session before running the existing commands:
+
+```powershell
+$env:Path = (Join-Path $PWD 'node_modules/.bin') + ';' + $env:Path
+pnpm exec tsc --noEmit
+```
+
+Run this from the repository root. It only affects the current shell; no dependency or system-wide settings change is needed. If dependencies are missing, restore them with `pnpm install --frozen-lockfile`.
+
+### Publishing content
+
 1. Add or edit content/en/_.md or content/zh-hk/_.md. Copy the existing frontmatter structure.
 2. Set title, slug, translation_key, excerpt, category, type, tags, author, dates, locale, SEO title/description, sources, disclosure flag, schema type and published flag.
 3. Paired translations share translation_key; slugs may differ. Only published translations receive links and hreflang entries.

@@ -1,3 +1,5 @@
+import { verification, verificationLabel } from '@/lib/verification';
+import VerificationNotice from './VerificationNotice';
 import {
   Table,
   TableBody,
@@ -20,13 +22,7 @@ export default function ProductFacts({ locale }: { locale: Locale }) {
         </div>
         <span className="chip">{t('USD baseline', '美元基本價格')}</span>
       </div>
-      <div className="data-notice">
-        <strong>{t('Verification in progress.', '資料核實中。')}</strong>{' '}
-        {t(
-          'Hardware, compatibility and battery figures are the project’s starting dataset, pending a full official-source review. Oura membership prices and its included month were checked on 8 September 2026.',
-          '硬件價格、相容性及電池資料來自專案起始數據，尚待全面核對官方來源。Oura 會員價格及免費月份已於 2026 年 9 月 8 日查看。',
-        )}
-      </div>
+      <div className="data-notice"><VerificationNotice locale={locale}/></div>
       <div
         className="table-scroll"
         tabIndex={0}
@@ -99,7 +95,7 @@ export default function ProductFacts({ locale }: { locale: Locale }) {
                   )}
                 </TableCell>
                 <TableCell>
-                  {p.verified_date ?? t('Pending review', '待覆核')}
+                  {verificationLabel(verification(p).status, locale === 'zh-HK')}<small>{verification(p).last_reviewed ?? t('Not yet reviewed', '尚未覆核')}</small>
                 </TableCell>
               </TableRow>
             ))}
@@ -114,10 +110,7 @@ export default function ProductFacts({ locale }: { locale: Locale }) {
             </summary>
             <p>{p.notes[locale]}</p>
             <p>
-              {t(
-                'Product facts: supplied baseline; not yet independently verified.',
-                '產品資料：由專案提供，尚未獨立核實。',
-              )}
+              {verificationLabel(verification(p).status, locale === 'zh-HK')} · {verification(p).last_reviewed ?? t('Not yet reviewed', '尚未覆核')}
             </p>
             <a className="text-link" href={p.official_url}>
               {t('Official product source ↗', '官方產品來源 ↗')}

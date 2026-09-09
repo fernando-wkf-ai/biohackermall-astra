@@ -1,4 +1,5 @@
 'use client';
+import { verification, verificationLabel } from '@/lib/verification';
 import { useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -242,9 +243,7 @@ export default function Calculator({ locale }: { locale: Locale }) {
               <strong>{battery(r.product, zh)}</strong>
             </p>
             <p className="verified">
-              {t('Last verified: ', '最後核實：')}
-              {r.product.verified_date ??
-                t('pending full review', '待完整覆核')}
+              {verificationLabel(verification(r.product).status, zh)} · {verification(r.product).last_reviewed ?? t('Not yet reviewed', '尚未覆核')}
             </p>
             <a
               className="product-link"

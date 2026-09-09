@@ -25,15 +25,11 @@ export function Shell({
           <i />
         </a>
         <nav aria-label={tx(locale, 'Main navigation', '主要導覽')}>
-          <a
-            href={pathFor(locale, 'smartring')}
-            aria-current={path.startsWith('smartring') ? 'page' : undefined}
-          >
-            {tx(locale, 'Smart rings', '智能戒指')}
-          </a>
-          <a href={pathFor(locale, 'about')}>
-            {tx(locale, 'Our approach', '我們的理念')}
-          </a>
+          <a href={pathFor(locale) + '#discover'}>{tx(locale, 'Discover', '探索')}</a>
+          <a href={pathFor(locale, 'smartring')} aria-current={path === 'smartring' ? 'page' : undefined}>{tx(locale, 'Compare', '比較')}</a>
+          <a href={pathFor(locale, 'smartring/cost-calculator')} aria-current={path.includes('cost-calculator') ? 'page' : undefined}>{tx(locale, 'Tools', '工具')}</a>
+          <a href={pathFor(locale, 'smartring') + '#guides'}>{tx(locale, 'Guides', '指南')}</a>
+          <span className="nav-upcoming" title={tx(locale, 'Curated commerce is planned. BiohackerMall does not currently sell products.', '精選商品購物功能尚在規劃中，BiohackerMall 目前不直接銷售產品。')}>{tx(locale, 'Shop', '選購')}<small>{tx(locale, 'Future', '未來')}</small></span>
         </nav>
         <div className="header-tools">
           {alternate && (
@@ -49,7 +45,7 @@ export function Shell({
           <ThemeToggle zh={zh} />
         </div>
       </header>
-      <main id="main">{children}</main>
+      <main id="main" tabIndex={-1}>{children}</main>
       <footer>
         <div>
           <a className="brand" href={pathFor(locale)}>

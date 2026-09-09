@@ -12,11 +12,11 @@ export const pages: Record<
   '': {
     en: [
       'BiohackerMall — Product intelligence & decision tools',
-      'Understand, compare and choose biohacking products with transparent data, calculators and decision tools.',
+      'Independent research, decision tools and curated product intelligence for sleep, recovery, performance and longevity.',
     ],
     'zh-HK': [
       'BiohackerMall — 生物黑客產品情報及決策工具',
-      '透過透明數據、比較及計算工具，了解並選擇適合你的生物黑客產品。',
+      '以獨立研究、數據比較與決策工具，幫助你選擇改善睡眠、恢復、表現與長期健康的科技產品。',
     ],
   },
   smartring: {

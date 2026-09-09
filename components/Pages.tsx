@@ -9,203 +9,8 @@ import { products, money, compare } from '@/lib/products';
 import { Breadcrumbs, Disclosure } from './Shell';
 import ProductFacts from './ProductFacts';
 import Calculator from './Calculator';
-export function HomePage({ locale }: { locale: Locale }) {
-  const t = (en: string, zh: string) => tx(locale, en, zh);
-  const preview = compare(3, 'best', 'iphone');
-  return (
-    <>
-      <section className="hero">
-        <div>
-          <p className="eyebrow">
-            ● {t('INDEPENDENT PRODUCT INTELLIGENCE', '獨立產品情報')}
-          </p>
-          <h1>
-            {t('Better data.', '更清晰的數據。')}
-            <br />
-            {t('Smarter decisions.', '更明智的選擇。')}
-            <br />
-            <em>{t('Your biology.', '為你的身體而選。')}</em>
-          </h1>
-          <p className="lede">
-            {t(
-              'Understand the products behind better sleep, recovery and everyday performance. Clear comparisons. Transparent costs. Decisions on your terms.',
-              '了解與睡眠、恢復及日常表現相關的產品。以清晰比較及透明成本，作出屬於自己的選擇。',
-            )}
-          </p>
-          <a
-            className="button primary"
-            href={pathFor(locale, 'smartring/cost-calculator')}
-          >
-            {t('Explore smart ring costs', '探索智能戒指成本')} ↗
-          </a>
-          <p className="micro">
-            {t(
-              'Our first decision toolkit. Built for what comes next.',
-              '首個產品決策工具系列，為未來更多類別奠定基礎。',
-            )}
-          </p>
-        </div>
-        <div className="hero-panel">
-          <div className="panel-top">
-            <span>{t('DECISION TOOLS / 001', '決策工具 / 001')}</span>
-            <span className="chip">{t('SMART RINGS', '智能戒指')}</span>
-          </div>
-          <h2>
-            {t('The price tag is', '標價，')}
-            <br />
-            {t('only the beginning.', '只是開始。')}
-          </h2>
-          <p>
-            {t(
-              '3-year ownership · iPhone · best-value billing',
-              '3 年持有期 · iPhone · 自動選擇較低成本',
-            )}
-          </p>
-          <div className="home-costs">
-            {preview
-              .filter((r) => r.compatible)
-              .map((r) => (
-                <div key={r.id}>
-                  <div>
-                    <span>{r.product.brand}</span>
-                    <strong>{money(r.total)}</strong>
-                  </div>
-                  <div className="cost-bar" aria-hidden="true">
-                    <span style={{ width: (r.hardware / 700) * 100 + '%' }} />
-                    <i style={{ width: (r.subscription / 700) * 100 + '%' }} />
-                  </div>
-                </div>
-              ))}
-          </div>
-          <div className="chart-legend">
-            <span>
-              <i />
-              {t('Hardware', '硬件')}
-            </span>
-            <span>
-              <i />
-              {t('Membership', '會員費')}
-            </span>
-          </div>
-          <div className="panel-bottom">
-            <span>
-              {t('One purchase.', '一次購買。')}
-              <br />
-              <strong>{t('Years of ownership.', '多年持有。')}</strong>
-            </span>
-            <a
-              className="circle-link"
-              href={pathFor(locale, 'smartring/cost-calculator')}
-              aria-label={t('Open cost calculator', '開啟成本計算機')}
-            >
-              ↗
-            </a>
-          </div>
-          <p className="micro">
-            {t(
-              'Starting data · pending full verification',
-              '起始數據 · 待完整核實',
-            )}
-          </p>
-        </div>
-      </section>
-      <section className="section">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">{t('THE PLATFORM', '平台理念')}</p>
-            <h2>
-              {t(
-                'Decide with a clearer picture.',
-                '看得更清楚，選得更有把握。',
-              )}
-            </h2>
-          </div>
-          <span className="muted">
-            {t('Products. Evidence. Perspective.', '產品、證據與觀點。')}
-          </span>
-        </div>
-        <div className="three-grid">
-          {[
-            [
-              t('01 / COMPARE', '01 / 比較'),
-              t('Understand the trade-offs', '了解不同取捨'),
-              t(
-                'Hardware, subscriptions, compatibility and battery life, together in one view.',
-                '硬件、訂閱、相容性及電池續航，一目了然。',
-              ),
-            ],
-            [
-              t('02 / CALCULATE', '02 / 計算'),
-              t('Look beyond the price tag', '不止看標價'),
-              t(
-                'Choose your phone and ownership period. See what changes over time.',
-                '選擇手機及持有年期，了解成本隨時間如何改變。',
-              ),
-            ],
-            [
-              t('03 / VERIFY', '03 / 核實'),
-              t('Follow the source', '追溯資料來源'),
-              t(
-                'Clear assumptions, official references and visible verification status.',
-                '清楚展示假設、官方參考資料及核實狀態。',
-              ),
-            ],
-          ].map((x) => (
-            <article className="feature-card" key={x[0]}>
-              <span className="index">{x[0]}</span>
-              <h3>{x[1]}</h3>
-              <p>{x[2]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-      <section className="section category-section">
-        <div>
-          <p className="eyebrow">
-            {t('EXPLORE THE FIRST VERTICAL', '探索首個產品類別')}
-          </p>
-          <h2>
-            {t('Small device.', '小巧裝置。')}
-            <br />
-            {t('A considered decision.', '值得深思的選擇。')}
-          </h2>
-          <p>
-            {t(
-              'Smart rings are our starting point. BiohackerMall is built to help you navigate a wider world of biohacking products.',
-              '智能戒指是我們的起點。BiohackerMall 將協助你了解更廣闊的生物黑客產品世界。',
-            )}
-          </p>
-        </div>
-        <a className="category-card" href={pathFor(locale, 'smartring')}>
-          <span className="index">
-            {t('01 / AVAILABLE NOW', '01 / 現已推出')}
-          </span>
-          <h3>
-            {t('Smart rings', '智能戒指')} <span>↗</span>
-          </h3>
-          <p>
-            {t(
-              'Compare ' +
-                products.length +
-                ' products. Explore ownership costs, subscriptions and phone compatibility.',
-              '比較 ' +
-                products.length +
-                ' 款產品，了解持有成本、訂閱及手機相容性。',
-            )}
-          </p>
-          <div className="chip-row">
-            {products.map((p) => (
-              <span className="chip" key={p.id}>
-                {p.brand}
-              </span>
-            ))}
-          </div>
-        </a>
-      </section>
-      <Disclosure locale={locale} />
-    </>
-  );
-}
+import VerificationNotice from './VerificationNotice';
+export { default as HomePage } from './HomePage';
 export function HubPage({ locale }: { locale: Locale }) {
   const t = (en: string, zh: string) => tx(locale, en, zh);
   return (
@@ -256,7 +61,7 @@ export function HubPage({ locale }: { locale: Locale }) {
       </section>
       <Disclosure locale={locale} />
       <ProductFacts locale={locale} />
-      <section className="section">
+      <section className="section" id="guides">
         <p className="eyebrow">
           {t('UNDERSTAND THE COMPARISON', '了解比較方法')}
         </p>
@@ -314,12 +119,7 @@ export function CalculatorPage({ locale }: { locale: Locale }) {
           {t('4 PRODUCTS · USD ESTIMATES', '4 款產品 · 美元估算')}
         </span>
       </div>
-      <p className="data-notice compact">
-        {t(
-          'Baseline estimates using supplied product data. Full fact verification is pending; see sources below.',
-          '以提供的產品數據估算基本成本。完整資料核實尚待完成，來源見下方。',
-        )}
-      </p>
+      <p className="data-notice compact"><VerificationNotice locale={locale}/></p>
       <Calculator locale={locale} />
       <Disclosure locale={locale} />
       <ProductFacts locale={locale} />
