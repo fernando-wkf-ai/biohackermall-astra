@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/table';
 import { products, battery, money } from '@/lib/products';
 import { Locale, tx } from '@/lib/i18n';
-export default function ProductFacts({ locale }: { locale: Locale }) {
+export default function ProductFacts({ locale, showImages = false }: { locale: Locale; showImages?: boolean }) {
   const t = (en: string, zh: string) => tx(locale, en, zh);
   return (
     <section className="section" id="product-data">
@@ -65,6 +65,7 @@ export default function ProductFacts({ locale }: { locale: Locale }) {
               <TableRow key={p.id}>
                 <TableHead scope="row">
                   <a href={p.official_url}>
+                    {showImages && <img className="sr-table-image" src={`/smartring-media/${p.id}.webp`} width="72" height="60" loading="lazy" alt="" />}
                     {p.brand} {p.model} ↗
                   </a>
                 </TableHead>

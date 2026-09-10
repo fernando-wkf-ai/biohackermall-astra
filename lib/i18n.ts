@@ -21,12 +21,12 @@ export const pages: Record<
   },
   smartring: {
     en: [
-      'Smart Ring Decision Tools | BiohackerMall',
-      'Compare smart ring ownership costs, subscriptions, phone compatibility and battery estimates in one transparent view.',
+      'Why Wear a Smart Ring? Find Your Fit | BiohackerMall',
+      'Keep your watch, explore screenless sleep and recovery tracking, check your fit, then compare smart rings and true ownership costs.',
     ],
     'zh-HK': [
-      '智能戒指決策工具 | BiohackerMall',
-      '一站比較智能戒指的持有成本、訂閱費、手機相容性及電池續航估算。',
+      '為甚麼要戴智能戒指？找出適合你的選擇 | BiohackerMall',
+      '保留你的愛錶，探索無螢幕睡眠與恢復追蹤，了解是否適合你，再比較智能戒指及真正持有成本。',
     ],
   },
   'smartring/cost-calculator': {

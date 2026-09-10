@@ -9,6 +9,7 @@ import { products, money, compare } from '@/lib/products';
 import { Breadcrumbs, Disclosure } from './Shell';
 import ProductFacts from './ProductFacts';
 import Calculator from './Calculator';
+import SmartRingJourney from './SmartRingJourney';
 export function HomePage({ locale }: { locale: Locale }) {
   const t = (en: string, zh: string) => tx(locale, en, zh);
   const preview = compare(3, 'best', 'iphone');
@@ -207,80 +208,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   );
 }
 export function HubPage({ locale }: { locale: Locale }) {
-  const t = (en: string, zh: string) => tx(locale, en, zh);
-  return (
-    <>
-      <Breadcrumbs
-        locale={locale}
-        items={[{ label: t('Smart rings', '智能戒指') }]}
-      />
-      <section className="hub-hero">
-        <div>
-          <p className="eyebrow">
-            {t('PRODUCT INTELLIGENCE / 001', '產品情報 / 001')}
-          </p>
-          <h1>
-            {t('Smart rings.', '智能戒指。')}
-            <br />
-            <em>{t('Clearer choices.', '更清晰的選擇。')}</em>
-          </h1>
-          <p className="lede">
-            {t(
-              'Understand the ongoing cost, check your phone and compare the essentials. Start with the numbers that matter to your decision.',
-              '了解持續費用、檢查手機支援，並比較重要規格。由與你的決策最相關的數字開始。',
-            )}
-          </p>
-        </div>
-        <a
-          className="tool-card"
-          href={pathFor(locale, 'smartring/cost-calculator')}
-        >
-          <div className="panel-top">
-            <span>{t('INTERACTIVE TOOL', '互動工具')}</span>
-            <span>↗</span>
-          </div>
-          <span className="tool-symbol" aria-hidden="true">
-            ∑
-          </span>
-          <h2>{t('Total cost calculator', '總成本計算機')}</h2>
-          <p>
-            {t(
-              'One to five years. Four rings. Every recurring fee in view.',
-              '一至五年、四款戒指，清楚了解持續費用。',
-            )}
-          </p>
-          <span className="button primary">
-            {t('Calculate your costs', '計算你的成本')} ↗
-          </span>
-        </a>
-      </section>
-      <Disclosure locale={locale} />
-      <ProductFacts locale={locale} />
-      <section className="section">
-        <p className="eyebrow">
-          {t('UNDERSTAND THE COMPARISON', '了解比較方法')}
-        </p>
-        <h2>
-          {t('A little context goes a long way.', '多一點了解，選擇更有根據。')}
-        </h2>
-        <div className="three-grid">
-          {articles
-            .filter((a) => a.locale === locale && a.category === 'smartring')
-            .map((a) => (
-              <a
-                className="feature-card article-card"
-                href={pathFor(locale, articlePath(a))}
-                key={a.slug}
-              >
-                <span className="index">{t('EXPLAINER', '解說文章')}</span>
-                <h3>{a.title} ↗</h3>
-                <p>{a.excerpt}</p>
-              </a>
-            ))}
-        </div>
-      </section>
-    </>
-  );
+  return <SmartRingJourney locale={locale} />;
 }
 export function CalculatorPage({ locale }: { locale: Locale }) {
   const t = (en: string, zh: string) => tx(locale, en, zh);
