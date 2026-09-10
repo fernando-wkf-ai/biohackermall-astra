@@ -22,3 +22,5 @@ html[lang='zh-HK'] .bio-hero h1{font-size:clamp(2.6rem,4.7vw,4.2rem);line-height
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.motion-ready{opacity:1!important;transform:none!important}.biology-interface{transform:none}}
 @media(max-width:400px){.goal-grid{grid-template-columns:1fr}.goal-card summary p,html[lang='zh-HK'] .goal-card summary p{min-height:0}.goal-card .signal{height:54px;margin:16px 0}.bar-detail{font-size:12px;flex-wrap:wrap}}
 .premium-home .motion-ready:focus-within{transition:none}
+
+@media(max-width:480px){html[lang='zh-HK'] .bio-hero h1{font-size:clamp(2rem,9vw,2.7rem)}}
